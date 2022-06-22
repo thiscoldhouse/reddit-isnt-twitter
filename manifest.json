@@ -12,21 +12,19 @@
         "*://*.reddit.com/*"
       ],
       "js": [
-        "test.js",
         "js/jquery-3.3.1.js",
-        "js/worker.min.js",
-        "js/tesseract-core.wasm.js",
-        "traineddata/*.traineddata.gz",
+        "js/tesseract.min.js",
         "main.js"
       ]
     }
   ],
   "permissions": [
     "activeTab"
+  ],
+  "web_accessible_resources": [
+    "js/worker.min.js",
+    "js/tesseract-core.wasm.js",
+    "data/eng.traineddata",
+    "data/eng.traineddata.gz"
   ]
-  // "web_accessible_resources": [
-  //   "js/worker.min.js",
-  //   "js/tessearct-core.wasm.js",
-  //   "traineddata/*.traineddata.gz"
-  // ]
 }
